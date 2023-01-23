@@ -37,10 +37,17 @@ function checkButton(){
     button.addEventListener("click", changeGrid)
 }
 
+function clear(){
+    const cells = Array.from(document.querySelectorAll(".cell"));
+    cells.forEach(cell => cell.style.backgroundColor = "grey");
+}
 
 function run(){
     makeGrid(16);
     checkButton();
+
+    const clearButton = document.querySelector("#clear");
+    clearButton.addEventListener("click", clear)
 }
 
 run();

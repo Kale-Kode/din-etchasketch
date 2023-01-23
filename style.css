@@ -5,15 +5,16 @@
     grid-template-rows: repeat(16, 1fr);
     width: 80vh;
     height: 80vh;
-    margin: 60px auto auto auto;
+    margin: 20px auto auto auto;
 }
 
 .cell {
-    background-color: #9b9b9b;
+    background-color: grey;
     border: 1.5px solid rgb(36, 36, 36);
 }
 
-#btn {
+#btn,
+#clear {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,5 +26,14 @@
     width: 200px;
     height: 50px;
     font-size: larger;
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+#clear > button {
+    border-radius: 12px;
+    border: 1px solid black;
+    width: 100px;
+    height: 25px;
+    font-size: larger;
+    margin-top: 20px;
 }
