@@ -1,0 +1,29 @@
+.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 80vh;
+    height: 80vh;
+    margin: 60px auto auto auto;
+}
+
+.cell {
+    background-color: #9b9b9b;
+    border: 1.5px solid rgb(36, 36, 36);
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn > button {
+    border-radius: 12px;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    font-size: larger;
+    margin-top: 40px;
+}
